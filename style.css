@@ -2,3 +2,21 @@ body{
   background-color: #fcfcfc;
   /* background-color: #000; */
 }
+
+/* header{
+  background-color: #343A40;
+} */
+
+nav img {
+  max-height: 50px
+}
+footer img{
+  max-width: 100%;
+  height: auto;
+}
+footer{
+  color: #DDDDDD;
+}
+#footer{
+  background-color: #EB0122;
+}
