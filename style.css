@@ -14,6 +14,10 @@ footer img{
   max-width: 100%;
   height: auto;
 }
+.redimension{
+  max-width: 100%;
+  height: auto;
+}
 footer{
   color: #DDDDDD;
 }
