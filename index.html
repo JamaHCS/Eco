@@ -7,20 +7,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1,
      shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
+  <!-- Dependencias -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script type="text/javascript" src="modal.js"></script>
   <link rel="stylesheet" href="style.css">
 
   <title>Home</title>
 </head>
 
 <body>
+
+  <!-- Modal/inicio de sesión -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Iniciar sesión</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form autocomplete="on">
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Usuario:</label>
+              <input type="text" class="form-control" id="user" maxlength="20" autocomplete="username" placeholder="username">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Contraseña:</label>
+              <input type="password" class="form-control" id="password" maxlength="20" autocomplete="off" placeholder="********">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+          <input type="submit" class="btn btn-primary">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal/inicio de sesión -->
+
   <!-- header -->
   <header id="header" class="sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand pl-4" href="index.html">
         <img src="assets/ico.png" alt="Logo Tula de Allende">
-Home
+        Home
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -32,15 +65,17 @@ Home
               Areas
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a href="eco-principal.html">  <button class="dropdown-item">Ecología</button> </a>
-            <a href="eco-ttala.html">  <button class="dropdown-item">Catastro</button> </a>
+              <a href="eco-principal.html"> <button class="dropdown-item">Ecología</button> </a>
+              <a href="eco-ttala.html"> <button class="dropdown-item">Catastro</button> </a>
             </div>
           </li>
           <li class="nav-item">
             <button class="nav-link btn mx-sm-auto mx-md-auto mx-auto" href="#">Registro</button>
           </li>
           <li class="nav-item active">
-            <button class="nav-link btn btn-outline-success mx-sm-auto mx-md-auto mx-auto" href="#">Iniciar sesión</button>
+            <button type="button" class="nav-link btn btn-outline-success mx-sm-auto mx-md-auto mx-auto" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+              Iniciar sesión
+            </button>
           </li>
         </ul>
       </div>
