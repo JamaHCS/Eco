@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es-mx">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+     shrink-to-fit=no">
+
+  <!-- Dependencias -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script type="text/javascript" src="modal.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <title>Tramite de Traslado</title>
+</head>
+
+<body>
+
+  <!-- Modal/inicio de sesión -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Iniciar sesión</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form autocomplete="on">
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Usuario:</label>
+              <input type="text" class="form-control" id="user" maxlength="20" autocomplete="username" placeholder="username">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Contraseña:</label>
+              <input type="password" class="form-control" id="password" maxlength="20" autocomplete="off" placeholder="********">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+          <input type="submit" class="btn btn-primary">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal/inicio de sesión -->
+
+
+  <!-- header -->
+  <header id="header" class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand pl-4" href="index.html">
+        <img src="assets/ico.png" alt="Logo Tula de Allende">
+        Home
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbar">
+        <ul class="navbar-nav ml-auto px-4">
+          <li class="nav-item dropdown mx-sm-auto mx-md-auto mx-auto">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Areas
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a href="eco-principal.html"> <button class="dropdown-item active">Ecología</button></a>
+              <a href="eco-ttala.html"> <button class="dropdown-item">Catastro</button></a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link btn mx-sm-auto mx-md-auto mx-auto" href="#">Registro</button>
+          </li>
+          <li class="nav-item active">
+            <button type="button" class="nav-link btn btn-outline-success mx-sm-auto mx-md-auto mx-auto" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+              Iniciar sesión
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- /Header -->
+
+  <!-- content -->
+  <main id="eco-principal" class="pt-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 offset-md-1">
+          <div class="card mx-auto">
+            <div class="container-fluid px-0">
+              <img src="assets/card-eco.jpg" class="card-img-top" alt="ecología">
+              <a href="index.html"><button type="button" class="btn btn-danger" id="cerrar">x</button></a>
+            </div>
+            <ul class="list-group list-group-flush mx-auto">
+              <li class="list-group-item mx-auto">
+                <a href="eco-principal.html"> <button type="button" name="button" class="btn btn-outline-success mx-auto">
+                    Ecología
+                  </button></a>
+              </li>
+              <li class="list-group-item mx-auto">
+                <a href="eco-ttala.html"> <button type="button" name="button" class="btn btn-outline-success mx-auto">
+                    Tramite de tala
+                  </button></a>
+              </li>
+              <li class="list-group-item mx-auto">
+                <a href="eco-tpoda.html"> <button type="button" name="button" class="btn btn-outline-success mx-auto">
+                    Tramite de poda
+                  </button></a>
+              </li>
+              <li class="list-group-item mx-auto">
+                <a href="#"><button type="button" name="button" class="btn btn-outline-success active mx-auto">
+                    Tramite de traslado
+                  </button></a>
+              </li>
+              <li class="list-group-item mx-auto">
+                <a href="eco-tdenuncias.html"><button type="button" name="button" class="btn btn-outline-success mx-auto">
+                    Denuncias
+                  </button></a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-6 pl-4">
+          <div class="row parrafo-100 align-items-center text-center">
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dolor dui, facilisis vitae tempus sit amet, auctor at lorem. Phasellus nulla nibh, sollicitudin vel magna ut, lobortis mattis magna. Aenean bibendum vel lorem ac
+            pellentesque. Quisque non dapibus sapien. Donec sed erat vel libero dignissim pharetra id quis odio. Aenean dictum tortor in sodales convallis. Proin vestibulum, libero id posuere dictum, nisl quam porta mi, a consequat magna libero a
+            massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus non sem mattis, porta magna quis, feugiat dolor. Aliquam vel nulla quis dui aliquam placerat ut tincidunt diam. Nam sed tempus
+            odio. Nunc placerat enim et ex blandit dignissim sed sed lorem.
+              <button type="button" class="btn btn-danger mx-sm-auto mx-md-auto mx-auto" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" id="init-tramite">
+              Iniciar tramite
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- /content -->
+
+  <!-- Footer -->
+  <footer id="footer" class="pb-0">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col px-0">
+          <img src="assets/bottom.png" class="img-fluid redimension" alt="Footer">
+        </div>
+      </div>
+      <div class="container">
+        <div class="row py-2">
+          <div class="col-12 text-center">
+            Municipio de Tula de Allende
+          </div>
+          <div class="col-12 text-center">
+            Plaza del nacionalismo s/n
+          </div>
+          <div class="col-12 text-center">
+            Col. Centro, C.P.42800
+          </div>
+          <div class="col-12 text-center">
+            Tula de Allende, Hgo.
+          </div>
+          <div class="col-12 text-center pb-2">
+            MTA850101NGA
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /Footer -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
