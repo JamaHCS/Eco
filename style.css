@@ -17,7 +17,7 @@ nav img {
   filter: grayscale(70%);
 }
 #blank .container{
-  height: 20vh;
+  height: auto;
 }
 .parrafo-100{
   height: 100%
@@ -34,9 +34,20 @@ footer img {
 }
 
 footer {
-  color: #DDDDDD;
+  color: #fff;
+  /* margin-bottom: 0px; */
 }
 
 #footer {
   background-color: #EB0122;
+
 }
+
+.first-footer{
+  background-color: #fcfcfc;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #28a745;
