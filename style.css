@@ -1,3 +1,9 @@
+
+/* Probable paleta de colores
+https://coolors.co/132a13-31572c-fcfcfc-83bd19-343a40 */
+
+
+
 body {
   background-color: #fcfcfc;
   /* background-color: #000; */
@@ -51,3 +57,16 @@ footer {
     color: #fff;
     text-decoration: none;
     background-color: #28a745;
+}
+
+#eco-principal #cerrar{
+  position: absolute;
+  top:0;
+  right: 0;
+}
+
+#eco-principal #init-tramite{
+position: absolute;
+  bottom:0;
+  right: 0;
+}
