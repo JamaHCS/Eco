@@ -52,97 +52,163 @@
   <main id="eco-registro" class="pt-3">
     <div class="container">
       <div class="row">
-        <div class="col-6" id="col-card-registro-1">
-          <div class="card mx-auto">
-            <div class="card-body pb-2">
-              <h5 class="card-title">Datos de usuario</h5>
+        <form class="form-inline" autocomplete="on">
+          <div class="col-6 form-group mx-auto" id="col-card-registro-1">
+            <div class="card mx-auto my-2">
+              <div class="card-body pb-2">
+                <h5 class="card-title">Datos de usuario</h5>
+              </div>
+              <ul class="list-group list-group-flush" id="datos-usuario">
+                <li class="list-group-item">
+                  <div class="input-group flex-nowrap">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="addon-wrapping">Nombre(s)</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Ejemplo: Juan" aria-label="Nombre(s)" aria-describedby="addon-wrapping" required autocomplete="given-name" autofocus>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="input-group flex-nowrap">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="addon-wrapping">Primer apellido</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Ejemplo: Perez" aria-label="Apellido" aria-describedby="addon-wrapping" required autocomplete="family-name">
+                  </div>
+
+                </li>
+                <li class="list-group-item">
+                  <div class="input-group flex-nowrap">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="addon-wrapping">Segundo apellido</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Ejemplo: Rodriguez" aria-label="Apellido" aria-describedby="addon-wrapping" required autocomplete="family-name">
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="input-group flex-nowrap">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="addon-wrapping">Telefono</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Ejemplo: 773 111 11 11" aria-label="Número telefónico" aria-describedby="addon-wrapping" required autocomplete="tel">
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="input-group flex-nowrap">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="addon-wrapping">Correo electrónico</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Ejemplo: tula@hidalgo.com" aria-label="Correo electrónico" aria-describedby="addon-wrapping" required autocomplete="email">
+                  </div>
+                </li>
+              </ul>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-
-                <div class="input-group flex-nowrap">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="addon-wrapping">Nombre(s)</span>
-                  </div>
-                  <input type="text" class="form-control" placeholder="Ejemplo: Juan" aria-label="Nombre(s)" aria-describedby="addon-wrapping" required autocomplete="given-name">
-                </div>
-
-              </li>
-              <li class="list-group-item">
-
-                <div class="input-group flex-nowrap">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="addon-wrapping">Primer apellido</span>
-                  </div>
-                  <input type="text" class="form-control" placeholder="Ejemplo: Perez" aria-label="Apellido" aria-describedby="addon-wrapping" required autocomplete="family-name">
-                </div>
-
-              </li>
-              <li class="list-group-item">
-                <div class="input-group flex-nowrap">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="addon-wrapping">Segundo apellido</span>
-                  </div>
-                  <input type="text" class="form-control" placeholder="Ejemplo: Rodriguez" aria-label="Apellido" aria-describedby="addon-wrapping" required autocomplete="family-name">
-                </div>
-              </li>
-              <li class="list-group-item">
-                <div class="input-group flex-nowrap">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="addon-wrapping">Telefono</span>
-                  </div>
-                  <input type="text" class="form-control" placeholder="Ejemplo: 773 111 11 11" aria-label="Número telefónico" aria-describedby="addon-wrapping" required autocomplete="tel">
-                </div>
-              </li>
-              <li class="list-group-item">
-                <div class="input-group flex-nowrap">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="addon-wrapping">Correo electrónico</span>
-                  </div>
-                  <input type="text" class="form-control" placeholder="Ejemplo: tula@hidalgo.com" aria-label="Correo electrónico" aria-describedby="addon-wrapping" required autocomplete="email">
-                </div>
-              </li>
-            </ul>
-
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="card mx-auto">
-            <div class="container-fluid px-0">
-              <img src="assets/card-eco.jpg" class="card-img-top" alt="ecología">
-              <a href="index.html"> <button type="button" class="btn btn-danger" id="cerrar">x</button></a>
+            <div class="card mx-auto my-2">
+              <div class="card-body text-center">
+                <a href="index.html" class="btn btn-outline-danger">Cancelar</a> <!-- este debe de ser un boton -->
+                <button href="#" class="btn btn-outline-success">Enviar</button>
+              </div>
             </div>
-            <ul class="list-group list-group-flush mx-auto">
-              <li class="list-group-item mx-auto">
-                <a href="#"> <button type="button" name="button" class="btn btn-outline-success active mx-auto">
-                    Ecología
-                  </button></a>
-              </li>
-              <li class="list-group-item mx-auto">
-                <a href="eco-ttala.html"> <button type="button" name="button" class="btn btn-outline-success mx-auto">
-                    Tramite de tala
-                  </button></a>
-              </li>
-              <li class="list-group-item mx-auto">
-                <a href="#"> <button type="button" name="button" class="btn btn-outline-success mx-auto">
-                    Tramite de poda
-                  </button> </a>
-              </li>
-              <li class="list-group-item mx-auto">
-                <a href="#">
-                  <button type="button" name="button" class="btn btn-outline-success mx-auto">
-                    Tramite de traslado
-                  </button></a>
-              </li>
-              <li class="list-group-item mx-auto">
-                <a href="#"> <button type="button" name="button" class="btn btn-outline-success mx-auto">
-                    Denuncias
-                  </button> </a>
-              </li>
-            </ul>
-
           </div>
-        </div>
+          <div class="col-6 form-group mx-auto" id="col-card-registro-2">
+            <div class="card mx-auto my-2">
+              <div class="card-body pb-2">
+                <h5 class="card-title">Datos de la cuenta</h5>
+              </div>
+              <ul class="list-group list-group-flush" id="datos-cuenta">
+                <li class="list-group-item">
+                  <div class="input-group flex-nowrap">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="addon-wrapping">Nombre de usuario</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Ejemplo: user_name" aria-label="username" aria-describedby="addon-wrapping" required autocomplete="username">
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="input-group flex-nowrap">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="addon-wrapping">Contraseña</span>
+                    </div>
+                    <input type="password" class="form-control" placeholder="********" aria-label="Password" aria-describedby="addon-wrapping" required autocomplete="new-password">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="card mx-auto my-2">
+              <div class="card-body pb-2">
+                <h5 class="card-title">Dirección</h5>
+              </div>
+              <ul class="list-group list-group-flush" id="datos-direccion">
+                <li class="list-group-item">
+                  <div class="input-group flex-nowrap">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="addon-wrapping">Estado</span>
+                    </div>
+                    <select id="inputState" class="form-control" aria-label="Estado de residencia">
+                      <option selected>Hidalgo</option>
+                      <option>Aguascalientes</option>
+                      <option>Baja California</option>
+                      <option>Baja California Sur</option>
+                      <option>Campeche</option>
+                      <option>Chiapas</option>
+                      <option>Chihuahua</option>
+                      <option>Ciudad de México</option>
+                      <option>Coahuila</option>
+                      <option>Colima</option>
+                      <option>Durango</option>
+                      <option>Guanajuato</option>
+                      <option>Guerrero</option>
+                      <option>Jalisco</option>
+                      <option>Estado de México</option>
+                      <option>Michoacán</option>
+                      <option>Morelos</option>
+                      <option>Nayarit</option>
+                      <option>Nuevo León</option>
+                      <option>Oaxaca</option>
+                      <option>Aguascalientes</option>
+                      <option>Puebla</option>
+                      <option>Querétaro</option>
+                      <option>Quintana Roo</option>
+                      <option>San Luis Potosí</option>
+                      <option>Sinaloa</option>
+                      <option>Sonora</option>
+                      <option>Tabasco</option>
+                      <option>Tamaulipas</option>
+                      <option>Tlaxcala</option>
+                      <option>Veracruz</option>
+                      <option>Yucatán</option>
+                      <option>Zacatecas</option>
+                    </select>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="input-group flex-nowrap">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="addon-wrapping">Municipio</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Ejemplo: Tula de Allende" aria-label="Municipio de residencia" aria-describedby="addon-wrapping" required autocomplete="address-level2">
+                  </div>
+
+                </li>
+                <li class="list-group-item">
+                  <div class="input-group flex-nowrap">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="addon-wrapping">Localidad</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Ejemplo: Bojay" aria-label="Localidad de residencia" aria-describedby="addon-wrapping" required autocomplete="address-level3">
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="input-group flex-nowrap">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="addon-wrapping">Calle</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Ejemplo: Avenida de las flores, #15" aria-label="Calle de residencia" aria-describedby="addon-wrapping" required autocomplete="street-address">
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </main>
