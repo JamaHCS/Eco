@@ -12,7 +12,7 @@
   <script type="text/javascript" src="modal.js"></script>
   <link rel="stylesheet" href="style.css">
 
-  <title>Ecología - Principal</title>
+  <title>Registro</title>
 </head>
 
 <body>
@@ -49,41 +49,58 @@
   <!-- /Header -->
 
   <!-- content -->
-  <main id="eco-principal" class="pt-3">
+  <main id="eco-registro" class="pt-3">
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-6" id="col-card-registro-1">
           <div class="card mx-auto">
-            <div class="container-fluid px-0">
-              <img src="assets/card-eco.jpg" class="card-img-top" alt="ecología">
-              <a href="index.html"> <button type="button" class="btn btn-danger" id="cerrar">x</button></a>
+            <div class="card-body pb-2">
+              <h5 class="card-title">Datos de usuario</h5>
             </div>
-            <ul class="list-group list-group-flush mx-auto">
-              <li class="list-group-item mx-auto">
-                <a href="#"> <button type="button" name="button" class="btn btn-outline-success active mx-auto">
-                    Ecología
-                  </button></a>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+
+                <div class="input-group flex-nowrap">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="addon-wrapping">Nombre(s)</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Ejemplo: Juan" aria-label="Nombre(s)" aria-describedby="addon-wrapping" required autocomplete="given-name">
+                </div>
+
               </li>
-              <li class="list-group-item mx-auto">
-                <a href="eco-ttala.html"> <button type="button" name="button" class="btn btn-outline-success mx-auto">
-                    Tramite de tala
-                  </button></a>
+              <li class="list-group-item">
+
+                <div class="input-group flex-nowrap">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="addon-wrapping">Primer apellido</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Ejemplo: Perez" aria-label="Apellido" aria-describedby="addon-wrapping" required autocomplete="additional-name">
+                </div>
+
               </li>
-              <li class="list-group-item mx-auto">
-                <a href="#"> <button type="button" name="button" class="btn btn-outline-success mx-auto">
-                    Tramite de poda
-                  </button> </a>
+              <li class="list-group-item">
+                <div class="input-group flex-nowrap">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="addon-wrapping">Segundo apellido</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Ejemplo: Rodriguez" aria-label="Apellido" aria-describedby="addon-wrapping" required autocomplete="family-name">
+                </div>
               </li>
-              <li class="list-group-item mx-auto">
-                <a href="#">
-                  <button type="button" name="button" class="btn btn-outline-success mx-auto">
-                    Tramite de traslado
-                  </button></a>
+              <li class="list-group-item">
+                <div class="input-group flex-nowrap">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="addon-wrapping">Telefono</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Ejemplo: 773 111 11 11" aria-label="Número telefónico" aria-describedby="addon-wrapping" required autocomplete="tel">
+                </div>
               </li>
-              <li class="list-group-item mx-auto">
-                <a href="#"> <button type="button" name="button" class="btn btn-outline-success mx-auto">
-                    Denuncias
-                  </button> </a>
+              <li class="list-group-item">
+                <div class="input-group flex-nowrap">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="addon-wrapping">Correo electrónico</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Ejemplo: tula@hidalgo.com" aria-label="Correo electrónico" aria-describedby="addon-wrapping" required autocomplete="email">
+                </div>
               </li>
             </ul>
 
