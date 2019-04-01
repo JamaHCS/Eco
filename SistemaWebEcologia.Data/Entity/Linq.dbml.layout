@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 25.875" name="Linq">
+  <DataContextMoniker Name="/LinqDataContext" />
+  <nestedChildShapes>
+    <classShape Id="779b2714-74cd-4fcb-879a-49c5923d7575" absoluteBounds="0.75, 12.875, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/LinqDataContext/tblCiudadanos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1f2be36b-d967-414f-a4bf-be6fde57f71d" absoluteBounds="0.765, 13.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3b1e8e92-1b51-41fb-9d05-c68c6d0449ef" absoluteBounds="3.5, 13.125, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/LinqDataContext/imgDocsCiudadanos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e30116c5-dc82-4d1b-b052-dc2710b8640c" absoluteBounds="3.515, 13.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f00d4b65-8e12-4bbb-a82c-d559cf7e6e77" absoluteBounds="3.5, 10.125, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/LinqDataContext/tblCuentas" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4f9b20cb-b3ff-4999-b11f-9657b23abbed" absoluteBounds="3.515, 10.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bb36fe53-c82e-478e-b6ec-500584bafcf0" absoluteBounds="6.25, 3.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/LinqDataContext/tblDetalle" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a92e9870-658c-4f90-8937-36069f490b39" absoluteBounds="6.265, 4.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="21ebbda2-f1f8-44e1-b741-b30bd7f3333f" absoluteBounds="0.75, 24.375, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/LinqDataContext/tblDocsCiudadanos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ccba56b2-17b4-44a4-bae5-caa64c698d32" absoluteBounds="0.765, 24.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0ced27ba-f44c-4259-8a6b-ac4143a67490" absoluteBounds="0.75, 1.875, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/LinqDataContext/tblGradoDenuncia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="459b6215-72ec-489c-9e8f-c4006baa1e30" absoluteBounds="0.765, 2.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="15cfee75-3978-4a2b-8730-93ba04c1fb3c" absoluteBounds="0.75, 19.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LinqDataContext/tblReferencias" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7dc50ec5-172b-4722-9d4d-89d858c0414f" absoluteBounds="0.765, 19.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2b0954bc-cde9-4518-b0f6-956a86ea44f3" absoluteBounds="1.5, 16.375, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/LinqDataContext/tblSexo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cc216031-40bc-4e8e-af5f-88ab86ed98d1" absoluteBounds="1.5150000000000001, 16.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b7d40e88-a03d-488d-b6f4-a9a051778b3b" absoluteBounds="0.75, 4.375, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/LinqDataContext/tblStatus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ec1f3a3d-09bf-4ec1-abe2-15d658f005e7" absoluteBounds="0.765, 4.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1a912904-ed6c-445e-b0ad-273c2fec4f00" absoluteBounds="0.75, 22.375, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/LinqDataContext/tblTipoCuenta" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0e2e85a7-1fe2-4b74-90b9-00ad5d3f1fe7" absoluteBounds="0.765, 22.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="11551d83-b194-4473-85c9-dc463d10701b" absoluteBounds="0.75, 6.75, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/LinqDataContext/tblTipoDenuncia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="62ea5817-716d-4574-908d-d01a6721424a" absoluteBounds="0.765, 7.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9d3d2a3a-a35b-48a9-892c-65d83b29fff2" absoluteBounds="0.75, 8.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/LinqDataContext/tblTipoTramite" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c8faa773-dba4-4073-b3ae-7dc798ef770c" absoluteBounds="0.765, 9.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="10ace25e-c469-4d20-be51-6d44c020940b" absoluteBounds="0.75, 10.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/LinqDataContext/tblVisita" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e0b46ea2-cf15-4cc1-bb94-c73cac98134f" absoluteBounds="0.765, 11.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 14.0104484049479); (3.5 : 14.0104484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LinqDataContext/tblCiudadanos/tblCiudadanos_imgDocsCiudadanos" />
+      <nodes>
+        <classShapeMoniker Id="779b2714-74cd-4fcb-879a-49c5923d7575" />
+        <classShapeMoniker Id="3b1e8e92-1b51-41fb-9d05-c68c6d0449ef" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 12.9257682307692); (2.94107443490112 : 12.7346937958681 : JumpStart); (3.05892556509888 : 12.6168426656703 : JumpEnd); (3.19107443490112 : 12.4846937958681 : JumpStart); (3.30892556509888 : 12.3668426656703 : JumpEnd); (3.375 : 12.3007682307692); (3.375 : 11.0104484049479); (3.5 : 11.0104484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LinqDataContext/tblCiudadanos/tblCiudadanos_tblCuentas" />
+      <nodes>
+        <classShapeMoniker Id="779b2714-74cd-4fcb-879a-49c5923d7575" />
+        <classShapeMoniker Id="f00d4b65-8e12-4bbb-a82c-d559cf7e6e77" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 24.9719962565104); (3.25 : 24.9719962565104); (3.25 : 17.8189925130208); (3.66666666666667 : 17.8189925130208 : JumpStart); (3.83333333333333 : 17.8189925130208 : JumpEnd); (4.5 : 17.8189925130208); (4.5 : 14.8958968098958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LinqDataContext/tblDocsCiudadanos/tblDocsCiudadanos_imgDocsCiudadanos" />
+      <nodes>
+        <classShapeMoniker Id="21ebbda2-f1f8-44e1-b741-b30bd7f3333f" />
+        <classShapeMoniker Id="3b1e8e92-1b51-41fb-9d05-c68c6d0449ef" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.0937475 : 16.375); (2.0937475 : 15.2228011067708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LinqDataContext/tblSexo/tblSexo_tblCiudadanos" />
+      <nodes>
+        <classShapeMoniker Id="2b0954bc-cde9-4518-b0f6-956a86ea44f3" />
+        <classShapeMoniker Id="779b2714-74cd-4fcb-879a-49c5923d7575" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 22.9719962565104); (3 : 22.9719962565104); (3 : 18.0689925130208); (3.16666666666667 : 18.0689925130208 : JumpStart); (3.33333333333333 : 18.0689925130208 : JumpEnd); (3.75 : 18.0689925130208); (3.75 : 15.3958968098958); (3 : 15.3958968098958); (3 : 12.5208968098958); (3.07153808754007 : 12.5208968098958 : JumpStart); (3.33333333333333 : 12.5208968098958 : JumpEnd); (4.5 : 12.5208968098958); (4.5 : 11.8958968098958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LinqDataContext/tblTipoCuenta/tblTipoCuenta_tblCuentas" />
+      <nodes>
+        <classShapeMoniker Id="1a912904-ed6c-445e-b0ad-273c2fec4f00" />
+        <classShapeMoniker Id="f00d4b65-8e12-4bbb-a82c-d559cf7e6e77" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="607f1998-d47e-46c3-8d9e-17e50258786d" absoluteBounds="4.25, 1.375, 2, 2.5401025390625">
+      <DataClassMoniker Name="/LinqDataContext/tblDenuncias" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4fff8a3c-d637-489d-adb5-1fd3a608176f" absoluteBounds="4.265, 1.835, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 15.0593464583333); (2.91666666666667 : 15.0593464583333 : JumpStart); (3.08333333333333 : 15.0593464583333 : JumpEnd); (4.41666666666667 : 15.0593464583333 : JumpStart); (4.58333333333333 : 15.0593464583333 : JumpEnd); (5.95312625 : 15.0593464583333); (5.95312625 : 3.9151025390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqDataContext/tblCiudadanos/tblCiudadanos_tblDenuncias" />
+      <nodes>
+        <classShapeMoniker Id="779b2714-74cd-4fcb-879a-49c5923d7575" />
+        <classShapeMoniker Id="607f1998-d47e-46c3-8d9e-17e50258786d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.47199625651042); (4.25 : 2.47199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqDataContext/tblGradoDenuncia/tblGradoDenuncia_tblDenuncias" />
+      <nodes>
+        <classShapeMoniker Id="0ced27ba-f44c-4259-8a6b-ac4143a67490" />
+        <classShapeMoniker Id="607f1998-d47e-46c3-8d9e-17e50258786d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.97199625651042); (5.21875 : 4.97199625651042); (5.21875 : 3.9151025390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LinqDataContext/tblStatus/tblStatus_tblDenuncias" />
+      <nodes>
+        <classShapeMoniker Id="b7d40e88-a03d-488d-b6f4-a9a051778b3b" />
+        <classShapeMoniker Id="607f1998-d47e-46c3-8d9e-17e50258786d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.78214495227364); (3.06607443490112 : 6.46607051737252 : JumpStart); (3.18392556509888 : 6.34821938717476 : JumpEnd); (3.40625 : 6.12589495227364); (3.40625 : 3.31132890429688); (4.25 : 3.31132890429688)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LinqDataContext/tblTipoDenuncia/tblTipoDenuncia_tblDenuncias" />
+      <nodes>
+        <classShapeMoniker Id="11551d83-b194-4473-85c9-dc463d10701b" />
+        <classShapeMoniker Id="607f1998-d47e-46c3-8d9e-17e50258786d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.34699625651042); (3.04166666666667 : 9.34699625651042 : JumpStart); (3.20833333333333 : 9.34699625651042 : JumpEnd); (4.7031225 : 9.34699625651042); (4.7031225 : 3.9151025390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LinqDataContext/tblTipoTramite/tblTipoTramite_tblDenuncias" />
+      <nodes>
+        <classShapeMoniker Id="9d3d2a3a-a35b-48a9-892c-65d83b29fff2" />
+        <classShapeMoniker Id="607f1998-d47e-46c3-8d9e-17e50258786d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 12.0473448776042); (3.04166666666667 : 12.0473448776042 : JumpStart); (3.45833333333333 : 12.0473448776042 : JumpEnd); (4.41666666666667 : 12.0473448776042 : JumpStart); (4.58333333333333 : 12.0473448776042 : JumpEnd); (5.6562475 : 12.0473448776042); (5.6562475 : 3.9151025390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LinqDataContext/tblVisita/tblVisita_tblDenuncias" />
+      <nodes>
+        <classShapeMoniker Id="10ace25e-c469-4d20-be51-6d44c020940b" />
+        <classShapeMoniker Id="607f1998-d47e-46c3-8d9e-17e50258786d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="393f6e45-e102-4d94-a7a2-378cfeffd38a" absoluteBounds="3.5, 19, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/LinqDataContext/tblDireccionCiudadano" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a23274ce-e91e-4b7d-a187-05fee72f12dd" absoluteBounds="3.515, 19.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="be95243b-8b93-4647-acce-e24d6f294266" absoluteBounds="7.375, 0.75, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/LinqDataContext/tblDireccionTramite" />
+      <nestedChildShapes>
+        <elementListCompartment Id="92f1ab62-ba23-484f-b464-5bb868ac8c34" absoluteBounds="7.39, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 15.2228011067708); (3.125 : 15.5978011067708); (3.66666666666667 : 15.5978011067708 : JumpStart); (3.83333333333333 : 15.5978011067708 : JumpEnd); (4.41666666666667 : 15.5978011067708 : JumpStart); (4.58333333333333 : 15.5978011067708 : JumpEnd); (4.9999995 : 15.5978011067708); (4.9999995 : 19)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LinqDataContext/tblCiudadanos/tblCiudadanos_tblDireccionCiudadano" />
+      <nodes>
+        <classShapeMoniker Id="779b2714-74cd-4fcb-879a-49c5923d7575" />
+        <classShapeMoniker Id="393f6e45-e102-4d94-a7a2-378cfeffd38a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ffc0812f-a15c-4005-926b-56d43bc57e9e" absoluteBounds="7.25, 10.625, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/LinqDataContext/tblTramites" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3ed3f993-e254-4681-bd54-184393bb1484" absoluteBounds="7.265, 11.085, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.75 : 10.625); (7.75 : 6.03049967447917)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqDataContext/tblTramites/tblTramites_tblDetalle" />
+      <nodes>
+        <classShapeMoniker Id="ffc0812f-a15c-4005-926b-56d43bc57e9e" />
+        <classShapeMoniker Id="bb36fe53-c82e-478e-b6ec-500584bafcf0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 12.9316366153846); (2.91666666666667 : 12.9316366153846 : JumpStart); (3.08333333333333 : 12.9316366153846 : JumpEnd); (5.86979291666667 : 12.9316366153846 : JumpStart); (6.03645958333333 : 12.9316366153846 : JumpEnd); (7.25 : 12.9316366153846)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqDataContext/tblCiudadanos/tblCiudadanos_tblTramites" />
+      <nodes>
+        <classShapeMoniker Id="779b2714-74cd-4fcb-879a-49c5923d7575" />
+        <classShapeMoniker Id="ffc0812f-a15c-4005-926b-56d43bc57e9e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.78125 : 2.7131982421875); (8.78125 : 10.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqDataContext/tblDireccionTramite/tblDireccionTramite_tblTramites" />
+      <nodes>
+        <classShapeMoniker Id="be95243b-8b93-4647-acce-e24d6f294266" />
+        <classShapeMoniker Id="ffc0812f-a15c-4005-926b-56d43bc57e9e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 19.9142976888021); (2.91666666666667 : 19.9142976888021 : JumpStart); (3.08333333333333 : 19.9142976888021 : JumpEnd); (3.16666666666667 : 19.9142976888021 : JumpStart); (3.33333333333333 : 19.9142976888021 : JumpEnd); (3.375 : 19.9142976888021); (3.375 : 18.75); (4.91666616666667 : 18.75 : JumpStart); (5.08333283333333 : 18.75 : JumpEnd); (8.25 : 18.75); (8.25 : 14.1266097005208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqDataContext/tblReferencias/tblReferencias_tblTramites" />
+      <nodes>
+        <classShapeMoniker Id="15cfee75-3978-4a2b-8730-93ba04c1fb3c" />
+        <classShapeMoniker Id="ffc0812f-a15c-4005-926b-56d43bc57e9e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.56899251302083); (3.125 : 5.94399251302083); (3.125 : 12.28412109375); (3.16666666666667 : 12.28412109375 : JumpStart); (3.33333333333333 : 12.28412109375 : JumpEnd); (4.41666666666667 : 12.28412109375 : JumpStart); (4.58333333333333 : 12.28412109375 : JumpEnd); (5.86979291666667 : 12.28412109375 : JumpStart); (6.03645958333333 : 12.28412109375 : JumpEnd); (7.25 : 12.28412109375)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqDataContext/tblStatus/tblStatus_tblTramites" />
+      <nodes>
+        <classShapeMoniker Id="b7d40e88-a03d-488d-b6f4-a9a051778b3b" />
+        <classShapeMoniker Id="ffc0812f-a15c-4005-926b-56d43bc57e9e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.67674688476563); (3.04166666666667 : 9.67674688476563 : JumpStart); (3.20833333333333 : 9.67674688476563 : JumpEnd); (5.57291416666667 : 9.67674688476563 : JumpStart); (5.73958083333333 : 9.67674688476563 : JumpEnd); (5.86979291666667 : 9.67674688476563 : JumpStart); (6.03645958333333 : 9.67674688476563 : JumpEnd); (7.66666666666667 : 9.67674688476563 : JumpStart); (7.83333333333333 : 9.67674688476563 : JumpEnd); (8.265625 : 9.67674688476563); (8.265625 : 10.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqDataContext/tblTipoTramite/tblTipoTramite_tblTramites" />
+      <nodes>
+        <classShapeMoniker Id="9d3d2a3a-a35b-48a9-892c-65d83b29fff2" />
+        <classShapeMoniker Id="ffc0812f-a15c-4005-926b-56d43bc57e9e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 11.3674204388021); (3.04166666666667 : 11.3674204388021 : JumpStart); (3.20833333333333 : 11.3674204388021 : JumpEnd); (3.25 : 11.3674204388021); (3.25 : 12.6950142126402); (5.86979291666667 : 12.6950142126402 : JumpStart); (6.03645958333333 : 12.6950142126402 : JumpEnd); (7.25 : 12.6950142126402)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqDataContext/tblVisita/tblVisita_tblTramites" />
+      <nodes>
+        <classShapeMoniker Id="10ace25e-c469-4d20-be51-6d44c020940b" />
+        <classShapeMoniker Id="ffc0812f-a15c-4005-926b-56d43bc57e9e" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

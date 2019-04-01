@@ -1,0 +1,7 @@
+C:\Users\J_M_P_D_HACK\Documents\Visual Studio 2015\Projects\SistemaWebEcologia\SistemaWebEcologia.Control\bin\Debug\SistemaWebEcologia.Control.dll
+C:\Users\J_M_P_D_HACK\Documents\Visual Studio 2015\Projects\SistemaWebEcologia\SistemaWebEcologia.Control\bin\Debug\SistemaWebEcologia.Control.pdb
+C:\Users\J_M_P_D_HACK\Documents\Visual Studio 2015\Projects\SistemaWebEcologia\SistemaWebEcologia.Control\bin\Debug\SistemaWebEcologia.Data.dll
+C:\Users\J_M_P_D_HACK\Documents\Visual Studio 2015\Projects\SistemaWebEcologia\SistemaWebEcologia.Control\bin\Debug\SistemaWebEcologia.Data.pdb
+C:\Users\J_M_P_D_HACK\Documents\Visual Studio 2015\Projects\SistemaWebEcologia\SistemaWebEcologia.Control\obj\Debug\SistemaWebEcologia.Control.csprojResolveAssemblyReference.cache
+C:\Users\J_M_P_D_HACK\Documents\Visual Studio 2015\Projects\SistemaWebEcologia\SistemaWebEcologia.Control\obj\Debug\SistemaWebEcologia.Control.dll
+C:\Users\J_M_P_D_HACK\Documents\Visual Studio 2015\Projects\SistemaWebEcologia\SistemaWebEcologia.Control\obj\Debug\SistemaWebEcologia.Control.pdb

@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ProyectoEcologia" Class="LinqDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-7UNF9IR;Initial Catalog=ProyectoEcologia;User ID=sa" SettingsObjectName="SistemaWebEcologia.Data.Properties.Settings" SettingsPropertyName="ProyectoEcologiaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblCiudadanos" Member="tblCiudadanos">
+    <Type Name="tblCiudadanos">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Apaterno" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Amaterno" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FechaNacimiento" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Telefono" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Correo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="idSexo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tblCiudadanos_imgDocsCiudadanos" Member="imgDocsCiudadanos" ThisKey="id" OtherKey="idCiudadano" Type="imgDocsCiudadanos" />
+      <Association Name="tblCiudadanos_tblCuentas" Member="tblCuentas" ThisKey="id" OtherKey="idCiudadano" Type="tblCuentas" />
+      <Association Name="tblCiudadanos_tblDenuncias" Member="tblDenuncias" ThisKey="id" OtherKey="idCiudadano" Type="tblDenuncias" />
+      <Association Name="tblCiudadanos_tblDireccionCiudadano" Member="tblDireccionCiudadano" ThisKey="id" OtherKey="idCiudadano" Type="tblDireccionCiudadano" />
+      <Association Name="tblCiudadanos_tblTramites" Member="tblTramites" ThisKey="id" OtherKey="idCuidadano" Type="tblTramites" />
+      <Association Name="tblSexo_tblCiudadanos" Member="tblSexo" ThisKey="idSexo" OtherKey="id" Type="tblSexo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.imgDocsCiudadanos" Member="imgDocsCiudadanos">
+    <Type Name="imgDocsCiudadanos">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Vigencia" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Imgen" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="idCiudadano" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idDocumento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tblCiudadanos_imgDocsCiudadanos" Member="tblCiudadanos" ThisKey="idCiudadano" OtherKey="id" Type="tblCiudadanos" IsForeignKey="true" />
+      <Association Name="tblDocsCiudadanos_imgDocsCiudadanos" Member="tblDocsCiudadanos" ThisKey="idDocumento" OtherKey="id" Type="tblDocsCiudadanos" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblCuentas" Member="tblCuentas">
+    <Type Name="tblCuentas">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Usuario" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Contraseña" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="idTipoCuenta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCiudadano" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tblCiudadanos_tblCuentas" Member="tblCiudadanos" ThisKey="idCiudadano" OtherKey="id" Type="tblCiudadanos" IsForeignKey="true" />
+      <Association Name="tblTipoCuenta_tblCuentas" Member="tblTipoCuenta" ThisKey="idTipoCuenta" OtherKey="id" Type="tblTipoCuenta" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblDetalle" Member="tblDetalle">
+    <Type Name="tblDetalle">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NoArboles" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TipoArbol" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Medidas" Type="System.Data.Linq.Binary" DbType="VarBinary(50) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="PrecioUnitario" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Total" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="idTramite" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tblTramites_tblDetalle" Member="tblTramites" ThisKey="idTramite" OtherKey="id" Type="tblTramites" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblDocsCiudadanos" Member="tblDocsCiudadanos">
+    <Type Name="tblDocsCiudadanos">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NombreDoc" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="tblDocsCiudadanos_imgDocsCiudadanos" Member="imgDocsCiudadanos" ThisKey="id" OtherKey="idDocumento" Type="imgDocsCiudadanos" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblGradoDenuncia" Member="tblGradoDenuncia">
+    <Type Name="tblGradoDenuncia">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NombreGradoDenuncia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="tblGradoDenuncia_tblDenuncias" Member="tblDenuncias" ThisKey="id" OtherKey="idGrado" Type="tblDenuncias" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblReferencias" Member="tblReferencias">
+    <Type Name="tblReferencias">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Referencia1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Referencia2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="otra" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Association Name="tblReferencias_tblTramites" Member="tblTramites" ThisKey="id" OtherKey="idReferencias" Type="tblTramites" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblSexo" Member="tblSexo">
+    <Type Name="tblSexo">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="strNombreSexo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="tblSexo_tblCiudadanos" Member="tblCiudadanos" ThisKey="id" OtherKey="idSexo" Type="tblCiudadanos" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblStatus" Member="tblStatus">
+    <Type Name="tblStatus">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NombreStatus" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="tblStatus_tblDenuncias" Member="tblDenuncias" ThisKey="id" OtherKey="idStatus" Type="tblDenuncias" />
+      <Association Name="tblStatus_tblTramites" Member="tblTramites" ThisKey="id" OtherKey="idStatus" Type="tblTramites" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblTipoCuenta" Member="tblTipoCuenta">
+    <Type Name="tblTipoCuenta">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NombreTipoCuenta" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="tblTipoCuenta_tblCuentas" Member="tblCuentas" ThisKey="id" OtherKey="idTipoCuenta" Type="tblCuentas" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblTipoDenuncia" Member="tblTipoDenuncia">
+    <Type Name="tblTipoDenuncia">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NombreTipoDenuncia" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="tblTipoDenuncia_tblDenuncias" Member="tblDenuncias" ThisKey="id" OtherKey="idTipoDenuncia" Type="tblDenuncias" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblTipoTramite" Member="tblTipoTramite">
+    <Type Name="tblTipoTramite">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NombreTramite" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="tblTipoTramite_tblDenuncias" Member="tblDenuncias" ThisKey="id" OtherKey="idTipoTramite" Type="tblDenuncias" />
+      <Association Name="tblTipoTramite_tblTramites" Member="tblTramites" ThisKey="id" OtherKey="idTipoTramite" Type="tblTramites" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblVisita" Member="tblVisita">
+    <Type Name="tblVisita">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Encargado" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="tblVisita_tblDenuncias" Member="tblDenuncias" ThisKey="id" OtherKey="idVisita" Type="tblDenuncias" />
+      <Association Name="tblVisita_tblTramites" Member="tblTramites" ThisKey="id" OtherKey="idVisita" Type="tblTramites" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblDenuncias" Member="tblDenuncias">
+    <Type Name="tblDenuncias">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="idGrado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idTipoDenuncia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCiudadano" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idVisita" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idTipoTramite" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Observaciones" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="tblCiudadanos_tblDenuncias" Member="tblCiudadanos" ThisKey="idCiudadano" OtherKey="id" Type="tblCiudadanos" IsForeignKey="true" />
+      <Association Name="tblGradoDenuncia_tblDenuncias" Member="tblGradoDenuncia" ThisKey="idGrado" OtherKey="id" Type="tblGradoDenuncia" IsForeignKey="true" />
+      <Association Name="tblStatus_tblDenuncias" Member="tblStatus" ThisKey="idStatus" OtherKey="id" Type="tblStatus" IsForeignKey="true" />
+      <Association Name="tblTipoDenuncia_tblDenuncias" Member="tblTipoDenuncia" ThisKey="idTipoDenuncia" OtherKey="id" Type="tblTipoDenuncia" IsForeignKey="true" />
+      <Association Name="tblTipoTramite_tblDenuncias" Member="tblTipoTramite" ThisKey="idTipoTramite" OtherKey="id" Type="tblTipoTramite" IsForeignKey="true" />
+      <Association Name="tblVisita_tblDenuncias" Member="tblVisita" ThisKey="idVisita" OtherKey="id" Type="tblVisita" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblDireccionCiudadano" Member="tblDireccionCiudadano">
+    <Type Name="tblDireccionCiudadano">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Estado" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Municipio" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Localidad" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Calle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Numero" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="idCiudadano" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tblCiudadanos_tblDireccionCiudadano" Member="tblCiudadanos" ThisKey="idCiudadano" OtherKey="id" Type="tblCiudadanos" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblDireccionTramite" Member="tblDireccionTramite">
+    <Type Name="tblDireccionTramite">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="calle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Numero" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Colonia" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Localidad" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Municipio" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="tblDireccionTramite_tblTramites" Member="tblTramites" ThisKey="id" OtherKey="idDireccionTramite" Type="tblTramites" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblTramites" Member="tblTramites">
+    <Type Name="tblTramites">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idTipoTramite" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NoArboles" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MotivoTramite" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TipoArbol" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="TipoLugar" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FechaTramite" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MontoTramite" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="DocTramite" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="idStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idVisita" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idReferencias" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCuidadano" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idDireccionTramite" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tblTramites_tblDetalle" Member="tblDetalle" ThisKey="id" OtherKey="idTramite" Type="tblDetalle" />
+      <Association Name="tblCiudadanos_tblTramites" Member="tblCiudadanos" ThisKey="idCuidadano" OtherKey="id" Type="tblCiudadanos" IsForeignKey="true" />
+      <Association Name="tblDireccionTramite_tblTramites" Member="tblDireccionTramite" ThisKey="idDireccionTramite" OtherKey="id" Type="tblDireccionTramite" IsForeignKey="true" />
+      <Association Name="tblReferencias_tblTramites" Member="tblReferencias" ThisKey="idReferencias" OtherKey="id" Type="tblReferencias" IsForeignKey="true" />
+      <Association Name="tblStatus_tblTramites" Member="tblStatus" ThisKey="idStatus" OtherKey="id" Type="tblStatus" IsForeignKey="true" />
+      <Association Name="tblTipoTramite_tblTramites" Member="tblTipoTramite" ThisKey="idTipoTramite" OtherKey="id" Type="tblTipoTramite" IsForeignKey="true" />
+      <Association Name="tblVisita_tblTramites" Member="tblVisita" ThisKey="idVisita" OtherKey="id" Type="tblVisita" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

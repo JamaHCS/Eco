@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SistemaWebEcologia", "..\..\..\Onceavo Cuatrimestre Estadia\Proyecto\Proyecto Web\SistemaWebEcologia\", "{D150953A-6DE8-4D93-9E14-90E9F1C57506}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		ProjectReferences = "{811c8835-7191-41b1-991a-163dfdf7eade}|SistemaWebEcologia.Data.dll;{ce53230a-970a-4084-9d89-cde9a70f0624}|SistemaWebEcologia.Control.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_60337"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\Onceavo Cuatrimestre Estadia\Proyecto\Proyecto Web\SistemaWebEcologia\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60337\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_60337"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\Onceavo Cuatrimestre Estadia\Proyecto\Proyecto Web\SistemaWebEcologia\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60337\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "60337"
+		SlnRelativePath = "..\..\..\Onceavo Cuatrimestre Estadia\Proyecto\Proyecto Web\SistemaWebEcologia\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaWebEcologia.Data", "SistemaWebEcologia.Data\SistemaWebEcologia.Data.csproj", "{811C8835-7191-41B1-991A-163DFDF7EADE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaWebEcologia.Control", "SistemaWebEcologia.Control\SistemaWebEcologia.Control.csproj", "{CE53230A-970A-4084-9D89-CDE9A70F0624}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D150953A-6DE8-4D93-9E14-90E9F1C57506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D150953A-6DE8-4D93-9E14-90E9F1C57506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D150953A-6DE8-4D93-9E14-90E9F1C57506}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D150953A-6DE8-4D93-9E14-90E9F1C57506}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{811C8835-7191-41B1-991A-163DFDF7EADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{811C8835-7191-41B1-991A-163DFDF7EADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{811C8835-7191-41B1-991A-163DFDF7EADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{811C8835-7191-41B1-991A-163DFDF7EADE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE53230A-970A-4084-9D89-CDE9A70F0624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE53230A-970A-4084-9D89-CDE9A70F0624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE53230A-970A-4084-9D89-CDE9A70F0624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE53230A-970A-4084-9D89-CDE9A70F0624}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
