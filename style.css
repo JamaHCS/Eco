@@ -102,3 +102,9 @@ footer {
 #azul a:hover{
   color: rgb(50, 99, 164)
 }
+.search{
+  height: 100%
+}
+.search-border{
+  border:0px;
+}
