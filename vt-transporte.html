@@ -72,7 +72,7 @@
                   </button></a>
               </li>
               <li class="list-group-item mx-auto">
-                <a href="tramites.html"> <button type="button" name="button" class="btn btn-outline-success mx-auto active">
+                <a href="tramites.html"> <button type="button" name="button" class="btn btn-outline-success mx-auto ">
                     Tramites
                   </button> </a>
               </li>
@@ -83,7 +83,7 @@
                   </button></a>
               </li>
               <li class="list-group-item mx-auto">
-                <a href="#"> <button type="button" name="button" class="btn btn-outline-success mx-auto">
+                <a href="#"> <button type="button" name="button" class="btn btn-outline-success mx-auto active">
                     Transporte
                   </button> </a>
               </li>
@@ -104,71 +104,11 @@
         <div class="col-12 col-md-9">
           <div class="row">
             <div class="navbar navbar-expand-lg navbar-light bg-light ml-auto pr-0 d-inline-block">
-              <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#azul" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
               <div class="collapse navbar-collapse" id="azul">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle bordes active" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Poda
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="#">Realizar tramite</a>
-                      <a class="dropdown-item active" href="#">Visualizar tramites</a>
-                    </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle bordes" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Tala
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="#">Realizar tramite</a>
-                      <a class="dropdown-item" href="vt-tala.html">Visualizar tramites</a>
-                    </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle bordes" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Desmonte
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="#">Realizar tramite</a>
-                      <a class="dropdown-item" href="vt-desmonte.html">Visualizar tramites</a>
-                    </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle bordes" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Limpieza
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="#">Realizar tramite</a>
-                      <a class="dropdown-item" href="vt-limpieza.html">Visualizar tramites</a>
-                    </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle bordes" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Deshierbe
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="#">Realizar tramite</a>
-                      <a class="dropdown-item" href="vt-deshierbe.html">Visualizar tramites</a>
-                    </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle bordes" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Transplante
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="#">Realizar tramite</a>
-                      <a class="dropdown-item" href="vt-transplante.html">Visualizar tramites</a>
-                    </div>
-                  </li>
-                  <li class="search-border">
-                    <form class="form-inline my-2 my-lg-0 search">
-                      <input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
-                    </form>
-                  </li>
-                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <button class="btn btn-outline-success my-2 my-sm-0 mx-1" type="submit">Realizar transporte de maguey</button>
+                  <input class="form-control mr-sm-2 mx-1" type="search" placeholder="Search" aria-label="Search">
+                </form>
               </div>
             </div>
           </div>
@@ -179,52 +119,44 @@
                   <tr>
                     <th scope="col">#</th>
                     <th scope="col">Nombre</th>
-                    <th scope="col">Lugar</th>
+                    <th scope="col">Lugar origen</th>
                     <th scope="col">Cantidad</th>
-                    <th scope="col">Motivo</th>
-                    <th scope="col">T. de árbol</th>
-                    <th scope="col">T. de lugar</th>
                     <th scope="col">Fecha reg.</th>
-                    <th scope="col">Detalles vis</th>
+                    <th scope="col">Documentación</th>
+                    <th scope="col">Monto</th>
                     <th scope="col">Estado</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">0-01</th>
+                    <th scope="row">0-001</th>
                     <td>Miguel Angel</td>
                     <td>Iturbe</td>
-                    <td>2</td>
-                    <td>Riesgo</td>
-                    <td>Pirul</td>
-                    <td>Privado</td>
+                    <td>100</td>
                     <td>29/01/2019</td>
-                    <td><a href="#">Ver visita</a></td>
-                    <td>Enviada</td>
+                    <td><button class="btn btn-light vista">Documentos</button></a></td>
+                    <td>$0</td>
+                    <td>Enviado</td>
                   </tr>
                   <tr>
-                    <th scope="row">0-02</th>
+                    <th scope="row">0-001</th>
                     <td>Miguel Angel</td>
                     <td>Iturbe</td>
-                    <td>2</td>
-                    <td>Riesgo</td>
-                    <td>Pirul</td>
-                    <td>Privado</td>
+                    <td>100</td>
                     <td>29/01/2019</td>
-                    <td><a href="#">Ver visita</a></td>
-                    <td>Enviada</td>
+                    <td><button class="btn btn-light vista">Documentos</button></a></td>
+                    <td>$0</td>
+                    <td>Enviado</td>
                   </tr>
                   <tr>
-                    <th scope="row">0-01</th>
+                    <th scope="row">0-001</th>
                     <td>Miguel Angel</td>
                     <td>Iturbe</td>
-                    <td>2</td>
-                    <td>Riesgo</td>
-                    <td>Pirul</td>
-                    <td>Privado</td>
+                    <td>100</td>
                     <td>29/01/2019</td>
-                    <td><a href="#">Ver visita</a></td>
-                    <td>Enviada</td>
+                    <td><button class="btn btn-light vista">Documentos</button></a></td>
+                    <td>$0</td>
+                    <td>Enviado</td>
                   </tr>
                 </tbody>
               </table>
