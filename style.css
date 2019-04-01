@@ -86,3 +86,19 @@ footer {
 .index{
   z-index: 1031;
 }
+.modal-tramite{
+  width: auto;
+  height: auto
+}
+
+.bordes{
+  border: solid 1px;
+  border-color: rgb(186, 186, 186, .7);
+}
+.tramites-tab{
+  width: 16%;
+}
+
+#azul a:hover{
+  color: rgb(50, 99, 164)
+}
