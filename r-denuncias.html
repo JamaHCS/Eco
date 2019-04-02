@@ -79,7 +79,7 @@
                   </button> </a>
               </li>
               <li class="list-group-item mx-auto">
-                <a href="#">
+                <a href="vt-denuncias.html">
                   <button type="button" name="button" class="btn btn-outline-success mx-auto active">
                     Denuncias
                   </button></a>
@@ -104,68 +104,74 @@
           </div>
         </div>
         <div class="col-12 col-md-9">
-          <div class="row">
-            <div class="navbar navbar-expand-lg navbar-light bg-light ml-auto pr-0 d-inline-block">
-              <div class="collapse navbar-collapse" id="azul">
-                <form class="form-inline my-2 my-lg-0">
-                  <a href="r-denuncias.html"> <button class="btn btn-outline-success my-2 my-sm-0 mx-1" type="button">Realizar denuncia</button> </a>
-                  <input class="form-control mr-sm-2 mx-1" type="search" placeholder="Search" aria-label="Search">
+          <div class="container-fluid pt-4 search">
+            <div class="row search">
+              <div class="col-12 my-auto bt">
+                <form class="pt-2">
+                  <div class="form-row">
+                    <div class="form-group col-md-3">
+                      <label for="input-solicitud">N° de solicitud</label>
+                      <input type="number" id="input-solicitud" class="form-control" placeholder="#">
+                    </div>
+                    <div class="form-group col-md-3">
+                      <label for="input-denunciado">Nombre del denunciado</label>
+                      <input type="text" id="input-denunciado" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="form-group col-md-3">
+                      <label for="input-motivo">Tipo de denuncia</label>
+                      <select id="input-motivo" class="form-control">
+                        <option>...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                      <label for="input-motivo">Grado de denuncia</label>
+                      <select id="input-motivo" class="form-control">
+                        <option>...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-row py-2">
+                    <div class="col-md-6">
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="input-motivo">¿Por qué fué denunciado?</label>
+                          <select id="input-motivo" class="form-control">
+                            <option>...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <fieldset disabled>
+                            <label for="input-otro">Otro</label>
+                            <input type="text" id="input-otro" class="form-control" placeholder="Otro">
+                          </fieldset>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col">
+                          <label for="breve">Explicación breve</label>
+                          <textarea class="form-control" id="breve" rows="3"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <div class="clase-provisional my-1">
+                        Borrar la clase cuando se remplace por el api
+                      </div>
+                    </div>
+                    <div class="col-12 form-group text-right pb-4">
+                      <a href="vt-denuncias.html">
+                        <button type="button" class="btn btn-danger">Cancelar</button>
+                      </a>
+                      <a href="vt-denuncias.html">
+                        <button type="button" class="btn btn-success">Siguiente</button>
+                      </a>
+                    </div>
+                  </div>
                 </form>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="table-responsive">
-              <table class="table">
-                <thead class="thead-light">
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Nombre denunciado</th>
-                    <th scope="col">T. denuncia</th>
-                    <th scope="col">Dir. denunciado</th>
-                    <th scope="col">Dir. lugar</th>
-                    <th scope="col">¿Por qué denunció?</th>
-                    <th scope="col">Fecha registro</th>
-                    <th scope="col">Detalles vis.</th>
-                    <th scope="col">Estado</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">0-001</th>
-                    <td>Miguel Angel</td>
-                    <td>Visible</td>
-                    <td>Iturbe</td>
-                    <td>Llano</td>
-                    <td>Tala</td>
-                    <td>02/04/2019</td>
-                    <td><button class="btn btn-light vista">Ver vista</button></a></td>
-                    <td>Enviado</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">0-001</th>
-                    <td>Miguel Angel</td>
-                    <td>Visible</td>
-                    <td>Iturbe</td>
-                    <td>Llano</td>
-                    <td>Tala</td>
-                    <td>02/04/2019</td>
-                    <td><button class="btn btn-light vista">Ver vista</button></a></td>
-                    <td>Enviado</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">0-001</th>
-                    <td>Miguel Angel</td>
-                    <td>Visible</td>
-                    <td>Iturbe</td>
-                    <td>Llano</td>
-                    <td>Tala</td>
-                    <td>02/04/2019</td>
-                    <td><button class="btn btn-light vista">Ver vista</button></a></td>
-                    <td>Enviado</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
           </div>
         </div>
