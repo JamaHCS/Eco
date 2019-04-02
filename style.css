@@ -122,5 +122,5 @@ footer {
   background-color: rgb(231, 77, 197);
 }
 .anchos{
-  width: 100%;
+  width: 100% !important;
 }

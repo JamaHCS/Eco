@@ -213,6 +213,11 @@
                           </select>
                         </div>
                       </div>
+                      <div class="form-row mx-1">
+                        <div class="clase-provisional">
+                          Borrar la clase cuando se remplace por el api
+                        </div>
+                      </div>
                     </div>
                     <div class="form-group col-md-4">
                       <div class="form-row">
@@ -220,7 +225,7 @@
                         <div class="col-6 text-center">Cantidad</div>
                       </div>
                       <fieldset class="form-inline">
-                        <div class="form-row">
+                        <div class="form-row py-1">
                           <div class="col-6 form-group">
                             <div class="custom-control custom-checkbox my-1 mr-sm-2">
                               <input type="checkbox" class="custom-control-input" id="customControlInline">
@@ -228,46 +233,50 @@
                             </div>
                           </div>
                           <div class="form-group col-6">
-                            <input type="number" class="form-control anchos" id="inputZip">
+                            <input type="number" class="form-control p-0 anchos">
                           </div>
                         </div>
                       </fieldset>
-                    </div>
-                    <div class="form-group col-md-3">
-                      <label for="input-monto">Monto</label>
-                      <input type="number" class="form-control" id="input-monto" placeholder="Monto">
-                    </div>
-                  </div>
-                  <div class="form-row pt-4 pb-4">
-                    <div class="col-md-6">
+                      <fieldset class="form-inline">
+                        <div class="form-row py-1">
+                          <div class="col-6 form-group">
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                              <input type="checkbox" class="custom-control-input" id="customControlInline">
+                              <label class="custom-control-label" for="customControlInline">De 0 a 3 mts.</label>
+                            </div>
+                          </div>
+                          <div class="form-group col-6">
+                            <input type="number" class="form-control p-0 anchos">
+                          </div>
+                        </div>
+                      </fieldset>
+                      <fieldset class="form-inline">
+                        <div class="form-row py-1">
+                          <div class="col-6 form-group">
+                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                              <input type="checkbox" class="custom-control-input" id="customControlInline">
+                              <label class="custom-control-label" for="customControlInline">De 0 a 3 mts.</label>
+                            </div>
+                          </div>
+                          <div class="form-group col-6">
+                            <input type="number" class="form-control p-0 anchos">
+                          </div>
+                        </div>
+                      </fieldset>
                       <div class="form-row">
-                        <div class="form-group col-md-6">
-                          <label for="input-motivo">Motivo</label>
-                          <select id="input-motivo" class="form-control">
-                            <option>...</option>
-                            <option>...</option>
-                          </select>
-                        </div>
-                        <div class="form-group col-md-6">
-                          <fieldset disabled>
-                            <label for="input-otro">Otro</label>
-                            <input type="text" id="input-otro" class="form-control" placeholder="Otro">
-                          </fieldset>
-                        </div>
+                        <label for="input-monto">Monto</label>
+                        <input type="number" class="form-control" id="input-monto" placeholder="Monto">
                       </div>
-                    </div>
-                    <div class="form-group col-md-6">
-                      <div class="clase-provisional">
-                        Borrar la clase cuando se remplace por el api
+                      <div class="form-row ml-auto my-1">
+                        <a href="vt-tala.html" class="ml-auto">
+                          <button type="button" class="btn btn-danger ml-auto">Cancelar</button>
+                        </a>
                       </div>
-                    </div>
-                    <div class="col-12 form-group text-right pb-4">
-                      <a href="vt-transplante.html">
-                        <button type="button" class="btn btn-danger">Cancelar</button>
-                      </a>
-                      <a href="rt-transplante-rc.html">
-                        <button type="button" class="btn btn-success">Siguiente</button>
-                      </a>
+                      <div class="form-row text-right my-1">
+                        <a href="rt-tala-rc.html" class="ml-auto">
+                          <button type="button" class="btn btn-success ml-auto">Siguiente</button>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </form>
