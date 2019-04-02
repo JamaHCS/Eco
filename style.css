@@ -111,3 +111,13 @@ footer {
 .vista{
   color: rgb(0, 91, 143)
 }
+
+.bt{
+    border-top: solid 1px;
+    border-color: rgb(186, 186, 186, .7);
+}
+.clase-provisional{
+  width: 100%;
+  height:100%;
+  background-color: rgb(231, 77, 197);
+}
