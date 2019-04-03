@@ -30,22 +30,23 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <form class="inline-form modal-body" <div class="modal-body">
-          <div class="form-group">
-            <div class="input-group">
-              <div class="form-group">
-                <label for="exampleFormControlFile1">Seleccionar archivo</label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        <form class="inline-form modal-body">
+          <div class="modal-body">
+            <div class="form-group">
+              <div class="input-group">
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Seleccionar archivo</label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
               </div>
+              <button type="button" class="btn btn-secondary my-1" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary my-1">Guardar</button>
             </div>
-            <button type="button" class="btn btn-secondary my-1" data-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary my-1">Guardar</button>
           </div>
         </form>
       </div>
     </div>
   </div>
-</div>
   <!-- modal curp -->
   <div class="modal fade" id="modal-curp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -56,22 +57,23 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <form class="inline-form modal-body" <div class="modal-body">
-          <div class="form-group">
-            <div class="input-group">
-              <div class="form-group">
-                <label for="exampleFormControlFile1">Seleccionar archivo</label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        <form class="inline-form modal-body">
+          <div class="modal-body">
+            <div class="form-group">
+              <div class="input-group">
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Seleccionar archivo</label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
               </div>
+              <button type="button" class="btn btn-secondary my-1" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary my-1">Guardar</button>
             </div>
-            <button type="button" class="btn btn-secondary my-1" data-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary my-1">Guardar</button>
           </div>
         </form>
       </div>
     </div>
   </div>
-</div>
   <!-- modal acta de nacimiento -->
   <div class="modal fade" id="modal-nacimiento" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -82,22 +84,23 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <form class="inline-form modal-body" <div class="modal-body">
-          <div class="form-group">
-            <div class="input-group">
-              <div class="form-group">
-                <label for="exampleFormControlFile1">Seleccionar archivo</label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        <form class="inline-form modal-body">
+          <div class="modal-body">
+            <div class="form-group">
+              <div class="input-group">
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Seleccionar archivo</label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
               </div>
+              <button type="button" class="btn btn-secondary my-1" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary my-1">Guardar</button>
             </div>
-            <button type="button" class="btn btn-secondary my-1" data-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary my-1">Guardar</button>
           </div>
         </form>
       </div>
     </div>
   </div>
-</div>
   <!-- modal acta de licencia de conducir -->
   <div class="modal fade" id="modal-conducir" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -108,22 +111,23 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <form class="inline-form modal-body" <div class="modal-body">
-          <div class="form-group">
-            <div class="input-group">
-              <div class="form-group">
-                <label for="exampleFormControlFile1">Seleccionar archivo</label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        <form class="inline-form modal-body">
+          <div class="modal-body">
+            <div class="form-group">
+              <div class="input-group">
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Seleccionar archivo</label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
               </div>
+              <button type="button" class="btn btn-secondary my-1" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary my-1">Guardar</button>
             </div>
-            <button type="button" class="btn btn-secondary my-1" data-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary my-1">Guardar</button>
           </div>
         </form>
       </div>
     </div>
   </div>
-</div>
   <!-- /modales -->
 
   <!-- header -->
@@ -228,9 +232,8 @@
                   <th scope="row">INE</th>
                   <td>Identificación en tramites</td>
                   <td class="text-center">
-                    <button type="button" class="mx-sm-auto mx-md-auto mx-auto btn-pen" data-toggle="modal" data-target="#modal-ine" data-whatever="@mdo">
-                      <img src="assets/pen.svg" alt="Editar" class="mx-auto">
-                    </button>
+                    <input type="file" class="custom-file-input inputfile d-none" name="subir-doc4" id="subir-doc4">
+                    <label class="custom-file-label-modal mt-0" for="subir-doc4">Editar</label>
                   </td>
                   <td class="text-center"><a href="assets/doc-prueba.pdf" target="_blank"><img src="assets/eye.svg" alt="Ver" class="mx-auto"></a></td>
                   <td class="text-center">Activo</td>
@@ -239,9 +242,8 @@
                   <th scope="row">CURP</th>
                   <td>Requisito en tramites</td>
                   <td class="text-center">
-                    <button type="button" class="mx-sm-auto mx-md-auto mx-auto btn-pen" data-toggle="modal" data-target="#modal-curp" data-whatever="@mdo">
-                      <img src="assets/pen.svg" alt="Editar" class="mx-auto">
-                    </button>
+                    <input type="file" class="custom-file-input inputfile d-none" name="subir-doc4" id="subir-doc4">
+                    <label class="custom-file-label-modal mt-0" for="subir-doc4">Editar</label>
                   </td>
                   <td class="text-center"><a href="assets/doc-prueba.pdf" target="_blank"><img src="assets/eye.svg" alt="Ver" class="mx-auto"></a></td>
                   <td class="text-center">Inactivo</td>
@@ -250,9 +252,8 @@
                   <th scope="row">Acta de nacimiento</th>
                   <td>Verificación de identidad</td>
                   <td class="text-center">
-                    <button type="button" class="mx-sm-auto mx-md-auto mx-auto btn-pen" data-toggle="modal" data-target="#modal-nacimiento" data-whatever="@mdo">
-                      <img src="assets/pen.svg" alt="Editar" class="mx-auto">
-                    </button>
+                    <input type="file" class="custom-file-input inputfile d-none" name="subir-doc4" id="subir-doc4">
+                    <label class="custom-file-label-modal mt-0" for="subir-doc4">Editar</label>
                   </td>
                   <td class="text-center"><a href="assets/doc-prueba.pdf" target="_blank"><img src="assets/eye.svg" alt="Ver" class="mx-auto"></a></td>
                   <td class="text-center">Activo</td>
@@ -261,9 +262,8 @@
                   <th scope="row">Lic. de conducir</th>
                   <td>Requisito</td>
                   <td class="text-center">
-                    <button type="button" class="mx-sm-auto mx-md-auto mx-auto btn-pen" data-toggle="modal" data-target="#modal-conducir" data-whatever="@mdo">
-                      <img src="assets/pen.svg" alt="Editar" class="mx-auto">
-                    </button>
+                    <input type="file" class="custom-file-input inputfile d-none" name="subir-doc4" id="subir-doc4">
+                    <label class="custom-file-label-modal mt-0" for="subir-doc4">Editar</label>
                   </td>
                   <td class="text-center"><a href="assets/doc-prueba.pdf" target="_blank"><img src="assets/eye.svg" alt="Ver" class="mx-auto"></a></td>
                   <td class="text-center">Inactivo</td>
