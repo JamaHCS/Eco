@@ -124,3 +124,9 @@ footer {
 .anchos{
   width: 100% !important;
 }
+.verde{
+  color:#83BD19;
+}
+ul small{
+  font-weight: bold;
+}
