@@ -111,22 +111,22 @@
                   <div class="form-row">
                     <div class="form-group col-md-3">
                       <label for="input-solicitud">N° de solicitud</label>
-                      <input type="number" id="input-solicitud" class="form-control" placeholder="#">
+                      <input type="number" id="input-solicitud" class="form-control" placeholder="#" required>
                     </div>
                     <div class="form-group col-md-3">
                       <label for="input-denunciado">Nombre del denunciado</label>
-                      <input type="text" id="input-denunciado" class="form-control" placeholder="Nombre">
+                      <input type="text" id="input-denunciado" class="form-control" placeholder="Nombre" required>
                     </div>
                     <div class="form-group col-md-3">
                       <label for="input-motivo">Tipo de denuncia</label>
-                      <select id="input-motivo" class="form-control">
+                      <select id="input-motivo" class="form-control" required>
                         <option>...</option>
                         <option>...</option>
                       </select>
                     </div>
                     <div class="form-group col-md-3">
                       <label for="input-motivo">Grado de denuncia</label>
-                      <select id="input-motivo" class="form-control">
+                      <select id="input-motivo" class="form-control" required>
                         <option>...</option>
                         <option>...</option>
                       </select>
@@ -137,7 +137,7 @@
                       <div class="form-row">
                         <div class="form-group col-md-6">
                           <label for="input-motivo">¿Por qué fué denunciado?</label>
-                          <select id="input-motivo" class="form-control">
+                          <select id="input-motivo" class="form-control" required>
                             <option>...</option>
                             <option>...</option>
                           </select>
@@ -145,14 +145,14 @@
                         <div class="form-group col-md-6">
                           <fieldset disabled>
                             <label for="input-otro">Otro</label>
-                            <input type="text" id="input-otro" class="form-control" placeholder="Otro">
+                            <input type="text" id="input-otro" class="form-control" placeholder="Otro" required>
                           </fieldset>
                         </div>
                       </div>
                       <div class="form-row">
                         <div class="col">
                           <label for="breve">Explicación breve</label>
-                          <textarea class="form-control" id="breve" rows="3"></textarea>
+                          <textarea class="form-control" id="breve" rows="3" required></textarea>
                         </div>
                       </div>
                     </div>

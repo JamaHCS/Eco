@@ -66,7 +66,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="addon-wrapping">Nombre(s)</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Ejemplo: Juan" aria-label="Nombre(s)" aria-describedby="addon-wrapping" required autocomplete="given-name" autofocus>
+                    <input type="text" class="form-control" placeholder="Ejemplo: Juan" aria-label="Nombre(s)" aria-describedby="addon-wrapping" required autocomplete="given-name" autofocus required>
                   </div>
                 </li>
                 <li class="list-group-item">
@@ -74,7 +74,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="addon-wrapping">Primer apellido</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Ejemplo: Perez" aria-label="Apellido" aria-describedby="addon-wrapping" required autocomplete="family-name">
+                    <input type="text" class="form-control" placeholder="Ejemplo: Perez" aria-label="Apellido" aria-describedby="addon-wrapping" required autocomplete="family-name" required>
                   </div>
 
                 </li>
@@ -83,7 +83,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="addon-wrapping">Segundo apellido</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Ejemplo: Rodriguez" aria-label="Apellido" aria-describedby="addon-wrapping" required autocomplete="family-name">
+                    <input type="text" class="form-control" placeholder="Ejemplo: Rodriguez" aria-label="Apellido" aria-describedby="addon-wrapping" required autocomplete="family-name" required>
                   </div>
                 </li>
                 <li class="list-group-item">
@@ -91,7 +91,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="addon-wrapping">Telefono</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Ejemplo: 773 111 11 11" aria-label="Número telefónico" aria-describedby="addon-wrapping" required autocomplete="tel">
+                    <input type="text" class="form-control" placeholder="Ejemplo: 773 111 11 11" aria-label="Número telefónico" aria-describedby="addon-wrapping" required autocomplete="tel" required>
                   </div>
                 </li>
                 <li class="list-group-item">
@@ -99,7 +99,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="addon-wrapping">Correo electrónico</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Ejemplo: tula@hidalgo.com" aria-label="Correo electrónico" aria-describedby="addon-wrapping" required autocomplete="email">
+                    <input type="text" class="form-control" placeholder="Ejemplo: tula@hidalgo.com" aria-label="Correo electrónico" aria-describedby="addon-wrapping" required autocomplete="email" required>
                   </div>
                 </li>
               </ul>
@@ -114,7 +114,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="addon-wrapping">Nombre de usuario</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Ejemplo: user_name" aria-label="username" aria-describedby="addon-wrapping" required autocomplete="username">
+                    <input type="text" class="form-control" placeholder="Ejemplo: user_name" aria-label="username" aria-describedby="addon-wrapping" required autocomplete="username" required>
                   </div>
                 </li>
                 <li class="list-group-item">
@@ -122,7 +122,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="addon-wrapping">Contraseña</span>
                     </div>
-                    <input type="password" class="form-control" placeholder="********" aria-label="Password" aria-describedby="addon-wrapping" required autocomplete="new-password">
+                    <input type="password" class="form-control" placeholder="********" aria-label="Password" aria-describedby="addon-wrapping" required autocomplete="new-password" required>
                   </div>
                 </li>
               </ul>
@@ -140,8 +140,8 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="addon-wrapping">Estado</span>
                     </div>
-                    <select id="inputState" class="form-control" aria-label="Estado de residencia">
-                      <option selected>Hidalgo</option>
+                    <select id="inputState" class="form-control" aria-label="Estado de residencia" required>
+                      <option>Hidalgo</option>
                       <option>Aguascalientes</option>
                       <option>Baja California</option>
                       <option>Baja California Sur</option>
@@ -182,7 +182,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="addon-wrapping">Municipio</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Ejemplo: Tula de Allende" aria-label="Municipio de residencia" aria-describedby="addon-wrapping" required autocomplete="address-level2">
+                    <input type="text" class="form-control" placeholder="Ejemplo: Tula de Allende" aria-label="Municipio de residencia" aria-describedby="addon-wrapping" required autocomplete="address-level2" required>
                   </div>
 
                 </li>
@@ -191,7 +191,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="addon-wrapping">Localidad</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Ejemplo: Bojay" aria-label="Localidad de residencia" aria-describedby="addon-wrapping" required autocomplete="address-level3">
+                    <input type="text" class="form-control" placeholder="Ejemplo: Bojay" aria-label="Localidad de residencia" aria-describedby="addon-wrapping" required autocomplete="address-level3" required>
                   </div>
                 </li>
                 <li class="list-group-item">
@@ -199,7 +199,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="addon-wrapping">Calle</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Ejemplo: Avenida de las flores, #15" aria-label="Calle de residencia" aria-describedby="addon-wrapping" required autocomplete="street-address">
+                    <input type="text" class="form-control" placeholder="Ejemplo: Avenida de las flores, #15" aria-label="Calle de residencia" aria-describedby="addon-wrapping" required autocomplete="street-address" required>
                   </div>
                 </li>
               </ul>
@@ -207,7 +207,7 @@
             <div class="card mx-auto my-2">
               <div class="card-body text-center">
                 <a href="index.html" class="btn btn-outline-danger">Cancelar</a> <!-- este debe de ser un boton -->
-                <a href="eco-perfil.html"> <button type="button" class="btn btn-primary mt-1 ml-0">Aceptar</button></a>
+                <a href="eco-perfil.html"> <button type="submit" class="btn btn-primary mt-1 ml-0">Aceptar</button></a>
               </div>
             </div>
           </div>
