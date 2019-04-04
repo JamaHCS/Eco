@@ -142,7 +142,6 @@ ul small {
 
 .custom-file-input-modal {
   position: relative;
-
   width: 100%;
   height: calc(1.5em + .75rem + 2px);
   margin: 0;
@@ -150,31 +149,43 @@ ul small {
 }
 
 .inputfile {
-	width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: relative;
-	z-index: -1;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
 }
-.custom-file-label-modal{
-/* position: absolute; */
-/* top: 0; */
-/* right: 0; */
-/* left: 0; */
-/* z-index: 1; */
-/* height: calc(1.5em + .75rem + 2px); */
-padding: .375rem .75rem;
-/* font-weight: 400; */
-/* line-height: 1.5; */
-color: #495057;
-background-color: #fff;
-border: 1px solid #ced4da;
-border-radius: .25rem;
+
+.custom-file-label-modal {
+  /* position: absolute; */
+  /* top: 0; */
+  /* right: 0; */
+  /* left: 0; */
+  /* z-index: 1; */
+  /* height: calc(1.5em + .75rem + 2px); */
+  padding: .375rem .75rem;
+  /* font-weight: 400; */
+  /* line-height: 1.5; */
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
 }
-.custom-file-label-modal:hover{
-background-color: #c7c7c7;
+
+.custom-file-label-modal:hover {
+  background-color: #c7c7c7;
 }
+
 .custom-file-label-modal:not(:disabled) {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.tooltips {
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration-color: currentcolor;
+  text-decoration-style: solid;
+  text-decoration-line: none;
+  text-decoration: underline;
 }
