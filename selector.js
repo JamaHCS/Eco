@@ -1,4 +1,4 @@
-console.log("Hola");
+
 
 $(function() {
   $("#id_categoria").change(function() {
@@ -10,6 +10,8 @@ $(function() {
   });
 });
 
+console.log("Primer selector ok");
+
 $(function() {
   $("#id_categoria_2").change(function() {
     if ($(this).val() === "3") {
@@ -19,3 +21,5 @@ $(function() {
     }
   });
 });
+
+console.log("Segundo selector ok");
