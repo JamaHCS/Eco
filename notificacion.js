@@ -13,9 +13,9 @@ Push.create("Holi", {
 var btn = document.getElementById('btn');
 btn.addEventListener('click', function() {
   Push.create("Holi", {
-    body: "Holi, raza'?",
+    body: "Holi, raza",
     icon: 'assets/icoo.png',
-    timeout: 10000,
+    timeout: 5000,
     onClick: function() {
       window.focus();
       this.close();
