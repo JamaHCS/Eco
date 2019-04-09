@@ -183,20 +183,16 @@
                   <div class="form-row">
                     <div class="form-group col-md-3">
                       <label for="input-motivo">Motivo</label>
-                      <select id="input-motivo" class="form-control">
-                        <option>...</option>
-                        <option>...</option>
+                      <select name='id_categoria_2' id='id_categoria_2' class="form-control">
+                        <option value="1" selected>...</option>
+                        <option value="2">...</option>
+                        <option value="3">Otro</option>
                       </select>
-                    </div>
-                    <div class="form-group col-md-3">
-                      <fieldset disabled>
-                        <label for="input-otro">Otro</label>
-                        <input type="text" id="input-otro" class="form-control" placeholder="Otro">
-                      </fieldset>
                     </div>
                     <div class="form-group col-md-3">
                       <label for="input-motivo">Tipo de lugar:</label>
                       <select id="input-motivo" class="form-control">
+                        <option>...</option>
                         <option>...</option>
                         <option>...</option>
                       </select>
@@ -209,8 +205,26 @@
                       </label>
                       <input type="number" class="form-control" id="input-monto" placeholder="Monto">
                     </div>
+                    <div class="form-group col-md-3">
+                      <label for="numero-soli"># de solicitud</label>
+                      <input id="numero-soli" type="text" class="form-control" placeholder="0-001">
+                    </div>
                   </div>
-                  <div class="form-row pt-4">
+                  <div class="form-row pb-1">
+                    <div class="col-md-4">
+                      <label for="id_input_2">Otro</label>
+                      <input id="id_input_2" type="text" class="form-control" disabled>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="folio-tram">Folio de tramite</label>
+                      <input id="folio-tram" type="number" class="form-control" placeholder="---">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="fecha-emi">Fecha de emisión</label>
+                      <input id="fecha-emi" type="date" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-row">
                     <div class="col">
                       Dirección del lugar
                     </div>
@@ -281,6 +295,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="tooltip.js" type="text/javascript"></script>
   <script src="modernizr/modernizr-custom.js" type="text/javascript"></script>
+  <script src="selector.js" type="text/javascript"></script>
 </body>
 
 </html>
